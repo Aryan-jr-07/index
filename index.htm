@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
@@ -30,7 +31,93 @@
                 Let's Talk</a>
         </nav>
     </header>
-    
-    
+
+
+    <main class="main-grid">
+        <!-- profile -->
+        <a href="#" class="profile-grid-box bg-gradient">
+            <div class="profile-box-img">
+                <!-- give image -->
+                <img src="./images/me.png" alt="profile">
+            </div>
+            <div class="profile-box-text">
+                <span>A Web Developer</span>
+                <h1>Aryan</h1>
+                <p>I'm a web developer with a passion for creating beautiful and functional websites. I have experience in HTML, CSS, JavaScript, React, and various frameworks.</p>
+                <!-- give image -->
+                <img src="./images/icon.svg" alt="icon"/>
+            </div>
+        </a>
+
+        <!-- about project -->
+        <div class="about-project-container">
+            <div class="marquee-grid-box bg-gradient">
+                <marquee behavior="alternate" direction="left" SCROLLAMOUNT="6" loop="infinite">
+                    <span> Latest Work And</span> Features - <span> Latest Work And</span> Features - <span> Latest Work And</span> 
+                    Features - <span> Latest Work And</span> Features - <span> Latest Work And</span> Features - <span> Latest Work And</span>
+                </marquee>
+            </div>
+
+            <!-- about -->
+            <a href="#" class="box-grid about-grid-box bg-gradient">
+                <img src="./images/sign.png" alt="about" class="grid-box-img" />
+                <div class="grid-text-container">
+                    <div class="grid-text">
+                        <span>More About Me</span>
+                        <strong>Resume</strong>
+                    </div>
+                    <div class="grid-icon">
+                        <img src="./images/icon.svg" alt="icon"/>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Work -->
+            <a href="#" class="box-grid bg-gradient">
+                <img src="./images/my-works.png" alt="Work" class="grid-box-img" />
+                <div class="grid-text-container">
+                    <div class="grid-text">
+                        <span>ShowCase</span>
+                        <strong>Projects</strong>
+                    </div>
+                    <div class="grid-icon">
+                        <img src="./images/icon.svg" alt="icon"/>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- blog -->
+        <a href="#" class="blog-grid box-grid">
+            <img src="./images/gfonts.png" alt="blog"/>
+            <div class="grid-text-container">
+                <div class="grid-text">
+                    <span>Blog</span>
+                    <strong>Gfonts</strong>
+                </div>
+                <div class="grid-icon">
+                    <img src="./images/icon.svg" alt="icon"/>
+                </div>
+            </div>
+        </a>
+
+        <!-- services -->
+        <a href="#" class="blog-grid box-grid bg-gradient">
+            <div class="services-icon">
+                <i class="fa-solid fa-code"></i>
+                <i class="fa-solid fa-gears"></i>
+                <i class="fa-solid fa-pen-fancy"></i>
+                <i class="fa-solid fa-cloud"></i> 
+            </div>
+            <div class="grid-text-container">
+                <span>Specialization</span>
+                <strong>Services Offer</strong>
+            </div>
+            <div class="grid-icon">
+                <img src="./images/icon.svg" alt="icon"/>
+            </div>
+        </a>
+    </main>
+                
 </body>
 </html>
