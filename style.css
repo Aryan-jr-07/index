@@ -57,7 +57,8 @@ header .menu li a:hover,
 header .menu li a.active{
     opacity: 1;
 }
-header .logo{
+header .logo,
+.footer-logo{
     font-size: 2rem;
     color: var(--text-color);
     font-weight: 500;
@@ -328,4 +329,28 @@ header .nav-contact{
     position: absolute;
     left: 30px;
     top: 0px;
+}
+
+/* footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px;
+    flex-wrap: wrap;
+    grid-gap: 5px;
+}
+footer ul li a{
+    color: var(--text-color);
+    opacity: 0.7;
+    margin: 0px 20px;
+    font-size: 0.9rem;
 }
