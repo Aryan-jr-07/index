@@ -57,18 +57,20 @@ header .menu li a:hover,
 header .menu li a.active{
     opacity: 1;
 }
-header .logo,
-.footer-logo{
+header .logo {
     font-size: 2rem;
     color: var(--text-color);
     font-weight: 500;
 }
+
 header .nav-contact{
     background-color: var(--bg-color);
     padding: 5px 20px;
     border-radius: 10px;
     color: var(--text-color);
 }
+
+/* main */
 .main-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -81,6 +83,8 @@ header .nav-contact{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    border: 1px solid var(--border-color);
+    background-color: #1b1b1b;
     grid-gap: 30px;
     width: 100%;
     grid-column: 1/3;
@@ -121,12 +125,11 @@ header .nav-contact{
 }
 .profile-box-text p{
     color: var(--text-color);
+    margin: 15px 0px;
     font-size: 0.9rem;
-    opacity: 0.6;
-    line-height: 1.5rem;
 }
 .profile-box-text img{
-    opacity: 0.5;
+    opacity: 0.5; 
     margin-left: auto;
     position: absolute;
     right: 40px;
@@ -169,6 +172,8 @@ header .nav-contact{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 1px solid var(--border-color);
+    background-color: #1b1b1b;
     width: 100%;
     padding: 30px;
     border-radius: 30px;
@@ -208,16 +213,18 @@ header .nav-contact{
     letter-spacing: 1px;
 }
 .grid-icon{
-    opacity: 0.5;
+    opacity: 0.4;
     transition: all ease 0.3s;
 } 
 .box-grid:hover .grid-icon{
     opacity: 1;
 }
 
-/* services */
+/* services */  
 .service-grid{
     grid-column: 2/4;
+    border: 1px solid var(--border-color);
+    background-color: #1b1b1b;
 }
 .service-icon{
     display: flex;
@@ -238,7 +245,7 @@ header .nav-contact{
 .social-container{
     padding: 15px;
     border: 1px solid var(--border-color);
-    border-radius: 50px;
+    border-radius: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -254,17 +261,16 @@ header .nav-contact{
     justify-content: center;
     align-items: center;
     border: 1px solid var(--border-color);
-    background-color: var(--bg-color);
+    background-color: #1b1b1b;
     color: var(--text-color);
     font-size: 2rem;
-    box-shadow: 2px 2px 30px rgba(0,0,0,0.6);
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.06);
     font-weight: 300;
     transition: all ease 0.3s;
 }
 .social-container a:hover{
     color: var(--bg-color);
     background-color: var(--text-color);
-    border: 1px solid var(--text-color);
     border: 1px solid transparent;
 }
 
@@ -275,21 +281,23 @@ header .nav-contact{
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
 }
-.project-project-box{
+.grid-project-box{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 1px solid var(--border-color);
+    background-color: #262626;
     padding: 20px;
     border-radius: 20px;
     text-align: center;
 }
-.project-project-box span{
+.grid-project-box span{
     color: var(--text-color);
     font-size: 2rem;
     margin-bottom: 10px;
 }
-.project-project-box strong{
+.grid-project-box strong{
     font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 0.4px;
@@ -313,7 +321,7 @@ header .nav-contact{
     color: var(--text-color);
     font-size: 2rem;
     font-weight: 500;
-    line-height: 2.5rem;
+    line-height: 2.5rem;  
 }
 .contact-grid h2 span{
     color: var(--main-color);
@@ -332,15 +340,29 @@ header .nav-contact{
 }
 
 /* footer */
-footer{
+.footer-logo {
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
+footer {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 90%;
+    padding: 0px;
     margin: auto;
+}
+footer ul {
+    display: flex;
     justify-content: center;
     align-items: center;
+    margin: 15px 0px;
+    flex-wrap: wrap;
+    grid-gap: 5px; 
 }
-footer ul{
+footer ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -348,9 +370,28 @@ footer ul{
     flex-wrap: wrap;
     grid-gap: 5px;
 }
-footer ul li a{
-    color: var(--text-color);
-    opacity: 0.7;
-    margin: 0px 20px;
+footer ul li a:hover{
+    opacity: 1;
+}
+footer span{
     font-size: 0.9rem;
+    color: var(--text-color);
+    opacity: 0.4;
+    margin: 20px 0px 40px 0px;
+}
+
+/* responsive */
+@media (max-width: 1100px){
+    .main-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .profile-grid.box,
+    .about-project-container,
+    .contact-grid{
+        grid-column: 1/3;
+    }
+    .service-grid,
+    .project-count-grid{
+        grid-column: auto;
+    }
 }
