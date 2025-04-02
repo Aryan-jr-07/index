@@ -163,7 +163,7 @@ header .nav-contact{
 .marquee-grid-box marquee span{
     opacity: 0.5;
 }
-.box-grid{
+.box-grid {
     display: flex;
     flex-direction: column;
     justify-content: center;
