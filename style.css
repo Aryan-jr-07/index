@@ -429,17 +429,10 @@ footer span{
     object-position: center left;
     margin-bottom: 7px;
 }
-.about-text {
-    padding: 20px;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid var(--border-color);
-}
 .about-text h1{
     color: var(--text-color);
-    font-size: 2rem;
-    font-weight: 500;
+    opacity: 0.6;
+    margin-top: 5px;
 }
 .about-text p{
     color: var(--text-color);
@@ -482,7 +475,6 @@ footer span{
     letter-spacing: 0.4px;
     font-size: 0.9rem;
 }
-
 /* home page responsive */
 .menu-icon,
 .menu-btn{
@@ -602,7 +594,6 @@ footer span{
         display: none;
     }
 }
-
 /* about page responsive */
 @media(max-width:1050px){
     .about-img-text{
@@ -616,7 +607,7 @@ footer span{
 }
 @media(max-width:620px){
     .about-img-text,
-    .adu-work-container{
+    .edu-work-container{
         grid-template-columns: 1fr;
     }
     .about-main-grid .contact-grid{
