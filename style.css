@@ -477,13 +477,15 @@ footer span{
 }
 
 /* service page */
-.service-container{
+.service-container,
+.project-container{
     max-width: 1180px;
     width: 90%;
     margin: auto;
     margin-bottom: -30px;
 }
-.service-container h1{
+.service-container h1,
+.project-container h1{
     color: var(--text-color);
     font-size: 3rem;
     font-weight: 500;
@@ -491,7 +493,8 @@ footer span{
     letter-spacing: 5px;
     margin: 0px 20px;
 }
-.service-container h1 span{
+.service-container h1 span,
+.project-container h1 span{
     color: var(--main-color);
 }
 .service-box-container{
@@ -511,6 +514,7 @@ footer span{
     font-size: 1rem;
     letter-spacing: 1px;
     opacity: 0.5;
+    font-weight: 500;
     text-transform: uppercase;
 }
 .service-box p{
@@ -518,6 +522,62 @@ footer span{
     font-size: 0.9rem;
     margin-top: 5px;
     opacity: 0.9;
+}
+
+/* project page */
+.project-box-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.project-box{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid var(--border-color);
+}
+.project-box-img{
+    border-radius: 30px;
+    display: flex;
+    overflow: hidden;
+    height: 300px;
+    width: 100%;
+}
+.project-box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.project-box-text-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.project-box-text{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.project-box-text span{
+    color: var(--text-color);
+    opacity: 0.6;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+.project-box-text strong{
+    color: var(--text-color);
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+.project-box-text-container img{
+    opacity: 0.3;
+    transition: all ease 0.3s;
+}
+.project-box:hover .profile-box-text-container img{
+    opacity: 1;
 }
 /* home page responsive */
 .menu-icon,
@@ -664,3 +724,33 @@ footer span{
         padding: 15px;
     }
 } 
+/* service page responsive */
+@media(max-width:700px){
+    .service-box-container{
+        grid-template-columns: 1fr;
+    }
+    .service-container h1{
+        font-size: 1.8rem;
+    }
+}
+/* work pagee responsive */
+@media(max-width:1100px){
+    .project-box-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .project-box-container .project-box:last-child{
+        grid-column:1/3;
+    }
+}
+@media(max-width:600px){
+    .project-box-container{
+        grid-template-columns: 1fr;
+    }
+    .project-box-container .project-box:last-child{
+        grid-column:1/2;
+    }
+    .project-container h1{
+        font-size: 1.8rem;
+    }
+    
+}
